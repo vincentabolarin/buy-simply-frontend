@@ -34,11 +34,11 @@ const togglePasswordView = () => {
       } else {
         const response = await axios.post(apiRoutes.logIn, payload);
         router.push("/dashboard");
-        toast.success(response.data.message || "You have successfully logged in.");
+        toast.success("You have successfully signed in.");
         return response;
       }
     } catch (error) {
-      toast.error(error.response.data.message ? error.response.data.message : "Error logging in.");
+      toast.error("Error signing in.");
     }
   }
 </script>
