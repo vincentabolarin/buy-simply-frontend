@@ -1,0 +1,100 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-primary: #61227D;
+  --color-secondary: #F8EAFF;
+  --color-white: #FFF;
+  --color-red: #EE1A40;
+  --color-gray-1: #5E5E5E;
+  --color-gray-2: #DDDDDD;
+  --color-gray-3: #7D7D7D;
+
+  --font-14: 14px;
+  --font-15: 15px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-32: 32px;
+
+  --font-400: 400;
+  --font-600: 600;
+  --font-700: 700;
+
+  --padding-0_5: 0.5rem;
+  --padding-2: 2rem;
+  --padding-4: 4rem;
+  --padding-6: 6rem;
+
+  --margin-0_5: 0.5rem;
+  --margin-1: 1rem;
+  --margin-2: 2rem;
+
+  --gap-0_5: 0.5rem;
+  --gap-1_5: 1.5rem;
+  --gap-2: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-2);
+  padding: var(--padding-0_5);
+  font-size: var(--font-14);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+button {
+  /* border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s; */
+}
+button:hover {
+  /* border-color: #646cff; */
+}
+button:focus,
+button:focus-visible {
+  /* outline: 4px auto -webkit-focus-ring-color; */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
