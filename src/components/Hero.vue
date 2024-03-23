@@ -31,6 +31,7 @@
       align-items: center;
       gap: var(--gap-1_5);
       font-weight: var(--font-700);
+      font-family: 'Lora', sans-serif;
 
       .title {
         font-size: var(--font-20);

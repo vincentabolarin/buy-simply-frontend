@@ -96,6 +96,7 @@ const togglePasswordView = () => {
         color: var(--color-primary);
         font-size: var(--font-32);
         font-weight: var(--font-700);
+        font-family: 'Lora', sans-serif;
       }
     }
 
